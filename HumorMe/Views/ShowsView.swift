@@ -37,7 +37,8 @@ struct ShowsView: View {
                         ProgressView("Loading shows…")
                             .tint(ComedyPalette.blush)
                             .frame(maxWidth: .infinity)
-                            .frame(height: max(80, viewport.size.height - headerHeight - 60))
+                            .padding(.top, 32)
+                            .frame(height: max(80, viewport.size.height - headerHeight - 60), alignment: .top)
                     } else {
                         showList
                     }
@@ -77,8 +78,12 @@ struct ShowsView: View {
                     quickDates
                 }
                 HStack {
-                    Text(comedian == nil ? "ON AROUND YOU" : "UPCOMING SHOWS")
-                        .font(.custom("Archivo-Bold", size: 10, relativeTo: .caption)).tracking(1.6)
+                    if comedian != nil {
+                        Text("UPCOMING SHOWS")
+                            .font(.custom("Archivo-Bold", size: 10, relativeTo: .caption)).tracking(1.6)
+                    }
+                    Text("\(results.count) shows")
+                        .font(.caption).foregroundStyle(ComedyPalette.muted)
                     Spacer()
                     Menu {
                         Toggle("Sort by price", isOn: $byPrice)
@@ -90,11 +95,9 @@ struct ShowsView: View {
                         }
                         #endif
                     } label: {
-                        HStack(spacing: 6) {
-                            Text("\(results.count) shows")
-                            Image(systemName: "arrow.up.arrow.down")
-                        }.font(.caption).foregroundStyle(ComedyPalette.muted)
-                    }.accessibilityLabel("List options, \(results.count) shows")
+                        Image(systemName: "arrow.up.arrow.down")
+                            .font(.caption).foregroundStyle(ComedyPalette.muted)
+                    }.accessibilityLabel("Sort shows")
                 }.foregroundStyle(ComedyPalette.blush)
         }
     }

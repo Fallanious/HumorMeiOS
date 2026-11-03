@@ -25,8 +25,16 @@ struct MessageView: View {
             Text(title).font(.headline)
             Text(message).foregroundStyle(.secondary)
             if let retry {
-                Button("Try Again", action: retry)
-                    .buttonStyle(.bordered).tint(ComedyPalette.sage)
+                Button(action: retry) {
+                    Text("Try Again")
+                        .font(.custom("Archivo-Bold", size: 14, relativeTo: .headline))
+                        .foregroundStyle(ComedyPalette.background)
+                        .padding(.horizontal, 24)
+                        .frame(minHeight: 48)
+                        .background(ComedyPalette.sage, in: RoundedRectangle(cornerRadius: 14))
+                }
+                .buttonStyle(.plain)
+                .padding(.top, 8)
             }
         }.multilineTextAlignment(.center).frame(maxWidth: .infinity).padding(24)
     }

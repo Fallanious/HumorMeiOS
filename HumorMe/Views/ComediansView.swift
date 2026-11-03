@@ -23,7 +23,8 @@ struct ComediansView: View {
                         ProgressView("Loading comedians…")
                             .tint(ComedyPalette.blush)
                             .frame(maxWidth: .infinity)
-                            .frame(height: max(80, viewport.size.height - headerHeight - 60))
+                            .padding(.top, 32)
+                            .frame(height: max(80, viewport.size.height - headerHeight - 60), alignment: .top)
                     } else if store.catalogError != nil {
                         MessageView(title: "Unable to load comedians", message: "We couldn’t load the comedians right now. Please try again.") {
                             Task { await store.loadCatalog() }
@@ -73,8 +74,6 @@ struct ComediansView: View {
             }.font(.custom("Archivo-Black", size: 43, relativeTo: .largeTitle)).tracking(-1.8)
             ComedySearchField(text: $search, placeholder: "Comedian name", accessibilityLabel: "Search comedians by name")
             HStack {
-                Text("FIND YOUR FAVORITES")
-                    .font(.custom("Archivo-Bold", size: 10, relativeTo: .caption)).tracking(1.6)
                 Spacer()
                 Text("\(results.count) comedians").font(.caption).foregroundStyle(ComedyPalette.muted)
             }
