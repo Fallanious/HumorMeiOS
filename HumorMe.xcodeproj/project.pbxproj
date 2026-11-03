@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0350B2EE507A1463740DB251 /* SharedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A8649F9A48C67B22AC3278 /* SharedViews.swift */; };
+		0A17D4BA5F203898358EF4F4 /* ComediansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E2F68BA9786A90CB06A420 /* ComediansView.swift */; };
+		41A0A1829739F6DD8674C15A /* Archivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1D0D7A2F4B374F0C1CC5C41 /* Archivo-Black.ttf */; };
+		41FF55289F5FA8D4E54952C8 /* HumorMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C9C42DF138986B9975D1C /* HumorMeApp.swift */; };
+		5AE27C45EEDB9D856A212895 /* Archivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EE2EFE52CBE3574F5413D29 /* Archivo-Bold.ttf */; };
+		5F140F335C364DDEBA992A81 /* Archivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEFCE15860DE17B0CF75C39F /* Archivo-Regular.ttf */; };
+		A10FBBBBEA1BC92B5897A920 /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BBDFCD30AF6ABAF8E408B /* ShowsView.swift */; };
+		A51EB098ECC529C32588383B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138B234F2D773F8A7F34285 /* APIClient.swift */; };
+		BE1A1FCFA273E3206E04B166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF0B740F7FBC1175649E05D /* Foundation.framework */; };
+		D04093B7F745A8D1E52BD65C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35550B233AB3444409D796A /* Assets.xcassets */; };
+		D87452DD0408356F5F67E98F /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650C5E7E9C0FA8C2260A85D /* AppStore.swift */; };
+		F9CF7BAF6E262FA914CF1B9E /* ShowMockups.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D59BB6223834DC2D78D755 /* ShowMockups.swift */; };
+		FDA34E60F5011F8B23C8555D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CDB4E0A072D44B42285CB6 /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2138B234F2D773F8A7F34285 /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Services/APIClient.swift; sourceTree = "<group>"; };
+		3F95CCF0D299D229DAC85966 /* Config.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		41E2F68BA9786A90CB06A420 /* ComediansView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComediansView.swift; path = Views/ComediansView.swift; sourceTree = "<group>"; };
+		4650C5E7E9C0FA8C2260A85D /* AppStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppStore.swift; path = Services/AppStore.swift; sourceTree = "<group>"; };
+		4F5BAB4CD8C5E6F406F55272 /* HumorMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumorMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE2EFE52CBE3574F5413D29 /* Archivo-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Archivo-Bold.ttf"; path = "Resources/Fonts/Archivo-Bold.ttf"; sourceTree = "<group>"; };
+		986C9C42DF138986B9975D1C /* HumorMeApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HumorMeApp.swift; sourceTree = "<group>"; };
+		98A8649F9A48C67B22AC3278 /* SharedViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedViews.swift; path = Views/SharedViews.swift; sourceTree = "<group>"; };
+		BEFCE15860DE17B0CF75C39F /* Archivo-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Archivo-Regular.ttf"; path = "Resources/Fonts/Archivo-Regular.ttf"; sourceTree = "<group>"; };
+		C1D0D7A2F4B374F0C1CC5C41 /* Archivo-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Archivo-Black.ttf"; path = "Resources/Fonts/Archivo-Black.ttf"; sourceTree = "<group>"; };
+		CAF0B740F7FBC1175649E05D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E35550B233AB3444409D796A /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		E4CDB4E0A072D44B42285CB6 /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Models/Models.swift; sourceTree = "<group>"; };
+		EE2BBDFCD30AF6ABAF8E408B /* ShowsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShowsView.swift; path = Views/ShowsView.swift; sourceTree = "<group>"; };
+		F9D59BB6223834DC2D78D755 /* ShowMockups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShowMockups.swift; path = Views/ShowMockups.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A20A0DA31AE360335B99B36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1A1FCFA273E3206E04B166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		097FA9598406D313B6E2CCBD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CAF0B740F7FBC1175649E05D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9A110391BC378BD6C35F8D11 /* HumorMe */ = {
+			isa = PBXGroup;
+			children = (
+				986C9C42DF138986B9975D1C /* HumorMeApp.swift */,
+				E4CDB4E0A072D44B42285CB6 /* Models.swift */,
+				2138B234F2D773F8A7F34285 /* APIClient.swift */,
+				4650C5E7E9C0FA8C2260A85D /* AppStore.swift */,
+				41E2F68BA9786A90CB06A420 /* ComediansView.swift */,
+				98A8649F9A48C67B22AC3278 /* SharedViews.swift */,
+				EE2BBDFCD30AF6ABAF8E408B /* ShowsView.swift */,
+				E35550B233AB3444409D796A /* Assets.xcassets */,
+				3F95CCF0D299D229DAC85966 /* Config.plist */,
+				F9D59BB6223834DC2D78D755 /* ShowMockups.swift */,
+				BEFCE15860DE17B0CF75C39F /* Archivo-Regular.ttf */,
+				5EE2EFE52CBE3574F5413D29 /* Archivo-Bold.ttf */,
+				C1D0D7A2F4B374F0C1CC5C41 /* Archivo-Black.ttf */,
+			);
+			name = HumorMe;
+			path = HumorMe;
+			sourceTree = "<group>";
+		};
+		B6BD33FC7093A7BF46D3798B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F5BAB4CD8C5E6F406F55272 /* HumorMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB529B364B433067ADE30FB1 = {
+			isa = PBXGroup;
+			children = (
+				B6BD33FC7093A7BF46D3798B /* Products */,
+				E5B1A5D8BD7FC92AC3965E90 /* Frameworks */,
+				9A110391BC378BD6C35F8D11 /* HumorMe */,
+			);
+			sourceTree = "<group>";
+		};
+		E5B1A5D8BD7FC92AC3965E90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				097FA9598406D313B6E2CCBD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		443B4F1E14260DAC534D13F9 /* HumorMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B6B9F36E463A0ABD15D9F7 /* Build configuration list for PBXNativeTarget "HumorMe" */;
+			buildPhases = (
+				4824606656F5173BAC1B4091 /* Sources */,
+				A20A0DA31AE360335B99B36E /* Frameworks */,
+				ACE902A5E9226C8A1E683702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HumorMe;
+			productName = HumorMe;
+			productReference = 4F5BAB4CD8C5E6F406F55272 /* HumorMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30AC4A4BEC846F38BC3E34BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 12EBC5FC908683F7BFC3D497 /* Build configuration list for PBXProject "HumorMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB529B364B433067ADE30FB1;
+			productRefGroup = B6BD33FC7093A7BF46D3798B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				443B4F1E14260DAC534D13F9 /* HumorMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE902A5E9226C8A1E683702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04093B7F745A8D1E52BD65C /* Assets.xcassets in Resources */,
+				5F140F335C364DDEBA992A81 /* Archivo-Regular.ttf in Resources */,
+				5AE27C45EEDB9D856A212895 /* Archivo-Bold.ttf in Resources */,
+				41A0A1829739F6DD8674C15A /* Archivo-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4824606656F5173BAC1B4091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FF55289F5FA8D4E54952C8 /* HumorMeApp.swift in Sources */,
+				FDA34E60F5011F8B23C8555D /* Models.swift in Sources */,
+				A51EB098ECC529C32588383B /* APIClient.swift in Sources */,
+				D87452DD0408356F5F67E98F /* AppStore.swift in Sources */,
+				0A17D4BA5F203898358EF4F4 /* ComediansView.swift in Sources */,
+				0350B2EE507A1463740DB251 /* SharedViews.swift in Sources */,
+				A10FBBBBEA1BC92B5897A920 /* ShowsView.swift in Sources */,
+				F9CF7BAF6E262FA914CF1B9E /* ShowMockups.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		136A705B674B13DC1C562653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4G8PJSUCD;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HumorMe/Config.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comedy.2.0.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FB488FC02685505F1379B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4G8PJSUCD;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HumorMe/Config.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comedy.2.0.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C06E428D3613734DFEA28D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E4177DADB3776E84E30E4A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12EBC5FC908683F7BFC3D497 /* Build configuration list for PBXProject "HumorMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C06E428D3613734DFEA28D9E /* Debug */,
+				E4177DADB3776E84E30E4A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B6B9F36E463A0ABD15D9F7 /* Build configuration list for PBXNativeTarget "HumorMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB488FC02685505F1379B4D /* Release */,
+				136A705B674B13DC1C562653 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30AC4A4BEC846F38BC3E34BD /* Project object */;
+}
