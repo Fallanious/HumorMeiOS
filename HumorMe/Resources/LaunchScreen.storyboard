@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23501" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="launch-controller">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="launch-controller">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23501"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
         <scene sceneID="launch-scene">
             <objects>
                 <viewController id="launch-controller" sceneMemberID="viewController">
@@ -14,35 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchWordmark" translatesAutoresizingMaskIntoConstraints="NO" id="wordmark">
-                                <rect key="frame" x="23.58" y="353.39" width="345.84" height="145.22"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="LaunchWordmark" translatesAutoresizingMaskIntoConstraints="NO" id="wordmark">
+                                <rect key="frame" x="30" y="302" width="332" height="164"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wordmark" secondAttribute="height" multiplier="1024:430" id="logo-aspect"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loading-line">
-                                <rect key="frame" x="137.5" y="752" width="118" height="6"/>
-                                <color key="backgroundColor" red="0.3490196078" green="0.5254901961" blue="0.4313725490" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="118" id="line-width"/>
-                                    <constraint firstAttribute="height" constant="6" id="line-height"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="safe-area"/>
-                        <color key="backgroundColor" red="0.1372549020" green="0.0352941176" blue="0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.035294117600000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wordmark" firstAttribute="centerX" secondItem="launch-view" secondAttribute="centerX" id="logo-center-x"/>
                             <constraint firstItem="wordmark" firstAttribute="centerY" secondItem="launch-view" secondAttribute="centerY" id="logo-center-y"/>
-                            <constraint firstItem="wordmark" firstAttribute="width" secondItem="launch-view" secondAttribute="width" multiplier="0.88" priority="750" id="logo-width"/>
                             <constraint firstItem="wordmark" firstAttribute="width" relation="lessThanOrEqual" constant="440" id="logo-max-width"/>
-                            <constraint firstItem="loading-line" firstAttribute="centerX" secondItem="launch-view" secondAttribute="centerX" id="line-center-x"/>
-                            <constraint firstItem="safe-area" firstAttribute="bottom" secondItem="loading-line" secondAttribute="bottom" constant="60" id="line-bottom"/>
+                            <constraint firstItem="wordmark" firstAttribute="width" secondItem="launch-view" secondAttribute="width" multiplier="0.88" priority="750" id="logo-width"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="first-responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="103.52112676056339"/>
         </scene>
     </scenes>
     <resources>
