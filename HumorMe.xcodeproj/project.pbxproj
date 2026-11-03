@@ -19,7 +19,6 @@
 		BE1A1FCFA273E3206E04B166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF0B740F7FBC1175649E05D /* Foundation.framework */; };
 		D04093B7F745A8D1E52BD65C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35550B233AB3444409D796A /* Assets.xcassets */; };
 		D87452DD0408356F5F67E98F /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650C5E7E9C0FA8C2260A85D /* AppStore.swift */; };
-		F9CF7BAF6E262FA914CF1B9E /* ShowMockups.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D59BB6223834DC2D78D755 /* ShowMockups.swift */; };
 		FDA34E60F5011F8B23C8555D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CDB4E0A072D44B42285CB6 /* Models.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +38,6 @@
 		E35550B233AB3444409D796A /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		E4CDB4E0A072D44B42285CB6 /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Models/Models.swift; sourceTree = "<group>"; };
 		EE2BBDFCD30AF6ABAF8E408B /* ShowsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShowsView.swift; path = Views/ShowsView.swift; sourceTree = "<group>"; };
-		F9D59BB6223834DC2D78D755 /* ShowMockups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShowMockups.swift; path = Views/ShowMockups.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 				E35550B233AB3444409D796A /* Assets.xcassets */,
 				AB1200000000000000000002 /* LaunchScreen.storyboard */,
 				3F95CCF0D299D229DAC85966 /* Config.plist */,
-				F9D59BB6223834DC2D78D755 /* ShowMockups.swift */,
 				BEFCE15860DE17B0CF75C39F /* Archivo-Regular.ttf */,
 				5EE2EFE52CBE3574F5413D29 /* Archivo-Bold.ttf */,
 				C1D0D7A2F4B374F0C1CC5C41 /* Archivo-Black.ttf */,
@@ -188,7 +185,6 @@
 				0A17D4BA5F203898358EF4F4 /* ComediansView.swift in Sources */,
 				0350B2EE507A1463740DB251 /* SharedViews.swift in Sources */,
 				A10FBBBBEA1BC92B5897A920 /* ShowsView.swift in Sources */,
-				F9CF7BAF6E262FA914CF1B9E /* ShowMockups.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

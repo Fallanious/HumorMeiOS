@@ -18,7 +18,6 @@ Open `HumorMe.xcodeproj` in Xcode, choose the **HumorMe** scheme, and run on an 
 - Show details, lineup links, venue addresses, ticket-page links, and native sharing.
 - Comedian search, portraits, and upcoming shows.
 - Loading, error and empty states; pull to refresh; cancellation of superseded searches.
-- Debug-only design gallery via Search Shows → show-count menu → UI Mockups, with clearly labeled illustrative content.
 
 Account screens, authentication, account models, comedian follow/alert controls, user API calls, SDK package references, and the Google service configuration have been removed. The client makes public read-only requests for shows, comedians, and venues. No login or account configuration is necessary.
 

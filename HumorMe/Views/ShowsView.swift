@@ -11,8 +11,6 @@ struct ShowsView: View {
     @State private var error: String?
     @State private var filtersPresented = false
     @State private var requestID = UUID()
-    @State private var mockupsPresented = false
-    @State private var comedianMockupsPresented = false
     var comedian: String? = nil
     var comedianImage: String? = nil
 
@@ -56,10 +54,6 @@ struct ShowsView: View {
         .toolbarBackground(.visible, for: .navigationBar, .tabBar)
         .scrollDismissesKeyboard(.interactively)
         .sheet(isPresented: $filtersPresented) { FilterView(filter: $filter) }
-        .fullScreenCover(isPresented: $mockupsPresented) { ShowMockupGallery() }
-        .fullScreenCover(isPresented: $comedianMockupsPresented) {
-            ComedianHomeMockups(name: comedian ?? "Sam Morril", portrait: comedianImage)
-        }
         .task(id: path) { await load() }
         .refreshable { await load() }
     }
@@ -87,13 +81,6 @@ struct ShowsView: View {
                     Spacer()
                     Menu {
                         Toggle("Sort by price", isOn: $byPrice)
-                        #if DEBUG
-                        if comedian != nil {
-                            Button("Comedian Mockups", systemImage: "rectangle.3.group") { comedianMockupsPresented = true }
-                        } else {
-                            Button("UI Mockups", systemImage: "rectangle.3.group") { mockupsPresented = true }
-                        }
-                        #endif
                     } label: {
                         Image(systemName: "arrow.up.arrow.down")
                             .font(.caption).foregroundStyle(ComedyPalette.muted)
